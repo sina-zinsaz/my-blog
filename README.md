@@ -73,4 +73,4 @@ Follow these steps to get started with the project:
 For any questions or collaboration, reach out to Sina Zinsaz:
 📧 Email: [sinazinsaz1@gmail.com]
 
-# 🌟 Enjoy Coding!
+🌟 :)
