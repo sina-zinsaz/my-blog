@@ -55,19 +55,19 @@ Follow these steps to get started with the project:
    http://localhost:3000
 </pre>
 # 💡 Technologies Used
-
+<pre>
 🔹React
 🔹Next.js
 🔹Material-UI (MUI)
 🔹TypeScript
-
+</pre>
 # ✨ Features
-
+<pre>
 🔹 Clean folder structure for scalability
 🔹 Modular and reusable components
 🔹 Type-safe with TypeScript
 🔹 Responsive design using MUI
-
+</pre>
 # 📬 Contact
 
 For any questions or collaboration, reach out to Sina Zinsaz:
