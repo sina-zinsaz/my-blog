@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <Box>
-      <Box m={4}>
+      <Box m="2rem 2rem 0.5rem 2rem">
         <Head />
         <Body />
         <Footer />

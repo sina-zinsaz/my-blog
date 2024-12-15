@@ -25,7 +25,7 @@ export default function Head() {
         component="img"
         src="/images/profile.jpg"
         alt="Profile"
-        sx={{ width: "5%", borderRadius: "50%" }}
+        sx={{ width: { xs: "15%", md: "5%" }, borderRadius: "50%" }}
       />
       <Box sx={{ display: "flex", gap: 2 }}>
         {socialLinks.map(({ href, icon: Icon }, index) => (
