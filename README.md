@@ -40,7 +40,7 @@ MY-BLOG/
 # 🛠️ How to Use
 
 Follow these steps to get started with the project:
-
+<pre>
 1. Clone the project:
    git clone <repository-url>
    cd MY-BLOG
@@ -53,7 +53,7 @@ Follow these steps to get started with the project:
 
 4. Open in Browser:
    http://localhost:3000
-
+</pre>
 # 💡 Technologies Used
 
 🔹React
