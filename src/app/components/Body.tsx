@@ -1,7 +1,9 @@
-import { Box, Typography, Grid, Button } from "@mui/material";
+"use client";
+import { Box, Typography, Grid, Button, useTheme } from "@mui/material";
 import React from "react";
 
 export default function Body() {
+  const theme = useTheme();
   return (
     <Box my={4}>
       <Box my={4}>
@@ -12,7 +14,7 @@ export default function Body() {
           sx={{
             width: "260px",
             height: "2px",
-            backgroundColor: "#FFF",
+            backgroundColor: theme.palette.primary.main,
             margin: "10px auto",
           }}
         />
@@ -20,7 +22,7 @@ export default function Body() {
           sx={{
             width: "230px",
             height: "2px",
-            backgroundColor: "#FFF",
+            backgroundColor: theme.palette.primary.main,
             margin: "10px auto",
           }}
         />
@@ -28,7 +30,7 @@ export default function Body() {
           sx={{
             width: "200px",
             height: "2px",
-            backgroundColor: "#FFF",
+            backgroundColor: theme.palette.primary.main,
             margin: "10px auto",
           }}
         />
@@ -36,7 +38,7 @@ export default function Body() {
           sx={{
             width: "180px",
             height: "2px",
-            backgroundColor: "#FFF",
+            backgroundColor: theme.palette.primary.main,
             margin: "10px auto",
           }}
         />
@@ -44,7 +46,7 @@ export default function Body() {
           sx={{
             width: "150px",
             height: "2px",
-            backgroundColor: "#FFF",
+            backgroundColor: theme.palette.primary.main,
             margin: "10px auto",
           }}
         />
@@ -52,7 +54,7 @@ export default function Body() {
           sx={{
             width: "120px",
             height: "2px",
-            backgroundColor: "#FFF",
+            backgroundColor: theme.palette.primary.main,
             margin: "10px auto",
           }}
         />
@@ -60,7 +62,7 @@ export default function Body() {
           sx={{
             width: "90px",
             height: "2px",
-            backgroundColor: "#FFF",
+            backgroundColor: theme.palette.primary.main,
             margin: "10px auto",
           }}
         />
@@ -68,7 +70,7 @@ export default function Body() {
           sx={{
             width: "60px",
             height: "2px",
-            backgroundColor: "#FFF",
+            backgroundColor: theme.palette.primary.main,
             margin: "10px auto",
           }}
         />
@@ -76,7 +78,7 @@ export default function Body() {
           sx={{
             width: "30px",
             height: "2px",
-            backgroundColor: "#FFF",
+            backgroundColor: theme.palette.primary.main,
             margin: "10px auto",
           }}
         />
@@ -84,7 +86,7 @@ export default function Body() {
           sx={{
             width: "10px",
             height: "2px",
-            backgroundColor: "#FFF",
+            backgroundColor: theme.palette.primary.main,
             margin: "10px auto",
           }}
         />
@@ -100,7 +102,8 @@ export default function Body() {
                 component="img"
                 src="/images/logoZ.png"
                 sx={{
-                  background: "#F2F2F2",
+                  background:
+                    theme.palette.mode === "dark" ? "#F2F2F2" : "#E0E0E0",
                   borderRadius: "20px",
                   width: "70%",
                 }}
@@ -119,7 +122,8 @@ export default function Body() {
                 component="img"
                 src="/images/logoZ_2.png"
                 sx={{
-                  background: "#F2F2F2",
+                  background:
+                    theme.palette.mode === "dark" ? "#F2F2F2" : "#E0E0E0",
                   borderRadius: "20px",
                   width: "70%",
                 }}
@@ -138,7 +142,8 @@ export default function Body() {
                 component="img"
                 src="/images/logoZ_3.png"
                 sx={{
-                  background: "#F2F2F2",
+                  background:
+                    theme.palette.mode === "dark" ? "#F2F2F2" : "#E0E0E0",
                   borderRadius: "20px",
                   width: "70%",
                   p: 1,
@@ -164,7 +169,8 @@ export default function Body() {
                 component="img"
                 src="/images/logoZ.png"
                 sx={{
-                  background: "#F2F2F2",
+                  background:
+                    theme.palette.mode === "dark" ? "#F2F2F2" : "#E0E0E0",
                   borderRadius: "50%",
                   width: "50%",
                   p: 1,
@@ -182,7 +188,8 @@ export default function Body() {
                 component="img"
                 src="/images/logoZ_2.png"
                 sx={{
-                  background: "#F2F2F2",
+                  background:
+                    theme.palette.mode === "dark" ? "#F2F2F2" : "#E0E0E0",
                   borderRadius: "50%",
                   width: "50%",
                   p: 1,
@@ -200,7 +207,8 @@ export default function Body() {
                 component="img"
                 src="/images/logoZ.png"
                 sx={{
-                  background: "#F2F2F2",
+                  background:
+                    theme.palette.mode === "dark" ? "#F2F2F2" : "#E0E0E0",
                   borderRadius: "50%",
                   width: "50%",
                   p: 1,
@@ -220,8 +228,10 @@ export default function Body() {
         <Box
           width="100%"
           borderRadius="20px"
-          border="#F2F2F2 1px solid"
           sx={{
+            border: `${
+              theme.palette.mode === "dark" ? "#F2F2F2" : "#000"
+            } 1px solid`,
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
@@ -239,7 +249,7 @@ export default function Body() {
             href="/Resume.pdf"
             download="SinaZinsaz_Resume.pdf"
             sx={{
-              background: "#F2F2F2",
+              background: theme.palette.mode === "dark" ? "#F2F2F2" : "#E0E0E0",
               color: "black",
               px: { xs: 2, md: 4 },
               py: 1,
