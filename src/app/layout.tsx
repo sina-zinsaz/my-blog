@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { ThemeProvider, CssBaseline } from "@mui/material";
-import DarkModeSwitch from "./components/DarkModeSwitch";
+import DarkModeSwitch from "./hooks/DarkModeSwitch";
 import { darkTheme, lightTheme } from "./theme/theme";
 import "./styles/globals.css";
 

@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Head from "./components/Head";
-import Body from "./components/Body";
+import Body from "./components/body/Body";
 import Footer from "./components/Footer";
 
 export const metadata = {
