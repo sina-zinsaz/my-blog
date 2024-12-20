@@ -1,5 +1,5 @@
 import { CardProps } from "@/app/types/CardProps";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Link } from "@mui/material";
 import React from "react";
 
 export default function Card({
@@ -7,6 +7,7 @@ export default function Card({
   title,
   description,
   isCircle,
+  link,
 }: CardProps) {
   return (
     <Box display="flex" flexDirection="column" alignItems="center">
@@ -27,7 +28,14 @@ export default function Card({
         mt={2}
         width={isCircle ? "auto" : "70%"}
       >
-        {title || description}
+        <Link
+          sx={{ textDecoration: "none" }}
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {title || description}
+        </Link>
       </Typography>
     </Box>
   );

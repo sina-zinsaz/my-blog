@@ -3,4 +3,5 @@ export type CardProps = {
   title?: string;
   description?: string;
   isCircle?: boolean;
+  link?:string;
 };
