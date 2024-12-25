@@ -20,8 +20,8 @@ const DarkModeSwitch: FC<DarkModeSwitchProps> = ({
       onClick={toggleDarkMode}
       sx={{
         position: "fixed",
-        bottom: 16,
-        right: 16,
+        bottom: 20,
+        right: 20,
         color: theme.palette.text.primary,
       }}
     >
