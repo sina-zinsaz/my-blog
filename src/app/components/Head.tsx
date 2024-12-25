@@ -27,7 +27,7 @@ export default function Head() {
           sx={{ width: { xs: "15%", md: "10%" }, borderRadius: "50%" }}
         />
         <Link
-          href="#"
+          href="join-us"
           sx={{
             textDecoration: "none",
             ml: 2,
