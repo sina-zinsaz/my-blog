@@ -170,47 +170,6 @@ export default function Page() {
       </Box>
 
       {/* Form Section */}
-      {/* <Box
-        display="flex"
-        flexDirection="column"
-        gap={2}
-        my={8}
-        width={isMobile ? "100%" : "50%"}
-      >
-        <TextField label="Full Name" variant="outlined" fullWidth />
-        <TextField label="Email" variant="outlined" fullWidth />
-        <Box
-          display="flex"
-          flexDirection={isMobile ? "column" : "row"}
-          justifyContent="space-between"
-          width="100%"
-        >
-          <TextField
-            label="Text for me :)"
-            multiline
-            rows={isMobile ? 2 : 4}
-            variant="outlined"
-            fullWidth
-            sx={{ mb: isMobile ? 2 : 0, mr: isMobile ? 0 : 2 }}
-          />
-          <Box
-            display="flex"
-            flexDirection={isMobile ? "row" : "column"}
-            justifyContent="space-between"
-            gap={isMobile ? 2 : 0}
-          >
-            <Button variant="contained" sx={{ py: 2 }}>
-              <FileDownloadRoundedIcon />
-            </Button>
-            <Button variant="contained" sx={{ py: 2 }}>
-              <ClearRoundedIcon />
-            </Button>
-          </Box>
-        </Box>
-        <Button variant="contained" fullWidth>
-          Send <ArrowRightAltRoundedIcon />
-        </Button>
-      </Box> */}
       <Box
         display="flex"
         flexDirection="column"
