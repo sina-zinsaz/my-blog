@@ -12,16 +12,36 @@ export default function Card({
   return (
     <Box display="flex" flexDirection="column" alignItems="center">
       <Box
-        component="img"
-        src={imageSrc}
         sx={{
-          background: (theme) =>
-            theme.palette.mode === "dark" ? "#F2F2F2" : "#E0E0E0",
-          borderRadius: isCircle ? "50%" : "20px",
-          width: isCircle ? "50%" : "70%",
-          p: 1,
+          width: isCircle ? "100%" : "70%",
+          display: "flex",
+          justifyContent: "center",
         }}
-      />
+      >
+        <Link
+          sx={{
+            textDecoration: "none",
+            display: "block",
+          }}
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Box
+            component="img"
+            src={imageSrc}
+            sx={{
+              background: (theme) =>
+                theme.palette.mode === "dark" ? "#F2F2F2" : "#E0E0E0",
+              borderRadius: "20px",
+              width: isCircle ? "50%" : "70%",
+              margin: "0 auto",
+              display: "block",
+              p: 1,
+            }}
+          />
+        </Link>
+      </Box>
       <Typography
         variant="body2"
         textAlign="center"
